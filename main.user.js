@@ -1,16 +1,4 @@
-// ==UserScript==
-// @name         CNMOOC摸鱼
-// @version      2021.0526.01
-// @description  章节导航页面自动浏览视频和文档，客观题页面自动填写答案
-// @author       114514
-// @match        https://cnmooc.org/study/initplay/*
-// @match        https://cnmooc.org/examTest/stuExamList/*
-// @match        https://cnmooc.org/portal/session/unitNavigation/*
-// @match        https://cnmooc.org/study/unit/*
-// @match        https://*.cnmooc.org/study/initplay/*
-// @match        https://*.cnmooc.org/examTest/stuExamList/*
-// @match        https://*.cnmooc.org/portal/session/unitNavigation/*
-// @match        https://*.cnmooc.org/study/unit/*
+ @match        https://*.cnmooc.org/study/unit/*
 // @grant        GM_notification
 // @grant        GM.xmlHttpRequest
 // @grant        unsafeWindow
@@ -26,7 +14,19 @@
   let paperStruct = [];
   let submitId = "";
   let testPaperId = 0;
-  let courseOpenId = 0;
+  // ==UserScript==
+// @name         CNMOOC摸鱼
+// @version      2021.0526.01
+// @description  章节导航页面自动浏览视频和文档，客观题页面自动填写答案
+// @author       114514
+// @match        https://cnmooc.org/study/initplay/*
+// @match        https://cnmooc.org/examTest/stuExamList/*
+// @match        https://cnmooc.org/portal/session/unitNavigation/*
+// @match        https://cnmooc.org/study/unit/*
+// @match        https://*.cnmooc.org/study/initplay/*
+// @match        https://*.cnmooc.org/examTest/stuExamList/*
+// @match        https://*.cnmooc.org/portal/session/unitNavigation/*
+//let courseOpenId = 0;
   let paperId = 0;
   let inited = false;
 
